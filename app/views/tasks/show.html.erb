@@ -1,0 +1,11 @@
+<div class="container">
+<h1><%= @task.title %></h1>
+<h3><%= @task.details %></h3>
+<% if @task.completed %>
+  <p><%= "✓ This Task is completed" %></p>
+  <% else %>
+  <p><%= "✗ This task is not completed" %></p>
+<% end %>
+<%= link_to "Go back to list of Tasks", index_path %>
+
+</div>
